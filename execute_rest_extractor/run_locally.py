@@ -19,5 +19,8 @@ if __name__ == "__main__":
             "backfill_shift_now_ts_backwards_days": "60",
             "sites": "['Oslo', 'Hannover', 'Chicago']"}
     """
-    data = {"frontfill_enabled": "True", "frontfill_lookback_min": "60", "backfill_enabled": "False"}
+    # data = {"frontfill_enabled": "True", "frontfill_lookback_min": "60", "backfill_enabled": "False"}
+
+    data = {"lookback_minutes": 7200, "sites": ["Oslo"]}
+
     handle(secrets, data)
